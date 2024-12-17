@@ -7,18 +7,15 @@ class Widget002 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("listtile"),
+        title: const Text("listtile"),
       ),
-      body: AboutListTile(
+      body: const AboutListTile(
         icon: Icon(Icons.info),
         applicationIcon: FlutterLogo(),
         applicationLegalese: "legalese",
         applicationName: "Flutter Map",
         applicationVersion: "1.1.1.1.1.1",
-        aboutBoxChildren: [
-          Text("this is texts from me")
-        ],
-
+        aboutBoxChildren: [Text("this is texts from me")],
       ),
     );
   }
